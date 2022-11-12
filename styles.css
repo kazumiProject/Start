@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body{
+	margin: auto;
+	overflow: hidden;
+}
+
+/*Propiedad para color negro*/
+.black{ 
+	background: black;
+}
+
+/*Propiedad para color blanco*/
+.white{
+ 	background: white;
+
+}
+
+/*Propiedad para color rojo*/
+.red{
+	background: #e60000;
+}
+
+/*Propiedad para color amarillo*/
+.yellow{
+	background: #ffcc00;
+
+}
+
+/*Propiedad para color gris*/
+.gray{
+	background: #cccccc;
+}
+
+/*Contenedor Superior*/
+.superiorContainer{
+	height: 100px;
+	min-width: 500px;
+	transform: rotate(0.7deg);
+	display: flex;
+	z-index: 1;
+}
+
+/*Contenedor de melodia*/
+.composerBlock{
+	height: 80px;
+	width: 10em;
+	margin: 3px 3px 3px 3px;
+	z-index: 2;
+
+}
+
+/*Bloque rojo*/
+.backBlock1{
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	min-width: 500px;
+	transform: rotate(-1deg);
+	z-index: 0;
+
+}
+
+/*Decoración amarilla*/
+.backBlock2{
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	min-width: 500px;
+	transform: rotate(2deg);
+	z-index: 0;
+}
+
+/*Bloque de decoracion*/
+.decorationBlock{
+	position: absolute;
+	height: 40%;
+
+	width:100%;
+	left: -47%;
+	transform: rotate(103deg);
+	z-index: 0;
+}
+
+/*Sombra roja1*/
+.decorativeBar{
+	position: absolute;
+	height: 16em;
+	width: 44em;
+	margin-top: 53px;
+	transform: rotate(-5deg);
+	z-index: 1;
+}
+
+/*Sombra roja2*/
+/*.decorativeBar2{
+	position: absolute;
+	height: 8em;
+	width: 42em;
+	margin-top: 196px;
+	transform: rotate(-2.7deg);
+	left: 20px;
+	z-index: 1;
+}*/
+
+/*Bloque negro 1*/
+.interativeBlock1{
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	left: -5px;
+	height: 16em;
+	width: 44em;
+	margin-top: 43px;
+	transform: rotate(-7deg);
+	z-index: 1;
+}
+
+/*Bloque negro 2*/
+/*.interativeBlock2{
+	position: absolute;
+	height: 8em;
+	width: 42em;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 189px;
+	transform: rotate(-4deg);
+	z-index: 1;
+}
+*/
+/*Aquí se coloca la melodia aleatoria*/
+.containerComposer{
+	height: 77%;
+	/*width: 10.1em;*/
+	width: 23%;
+	margin: 7px 3px 3px 3px;
+	cursor: pointer;
+
+}
+
+.lastBlockContainer{
+	margin: 7px 10px 7px 3px;
+}	
+
+/*Aquí están los bloques de secciones:"Acordes,Figuras,Melodias,etc"*/
+.sectionBlock{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 27px;
+	/*width: 10.1em;*/
+	width: 23%;
+	margin: 0.5em 3px 5px 3px;
+	font-family: 'Press Start 2P', cursive;
+	cursor: pointer;
+
+}
+
+/*Rectangulo negro, decorador del contenedor de kazumi*/
+.kazumiDecoration{
+	height: 650px;
+	width: 453px;
+	position: absolute;
+	right: -8px;
+	bottom: -30px;
+	transform: rotate(-4deg);
+	z-index: -1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column-reverse;
+}
+
+/*Contenedor de kazumi*/
+.kazumiPlayer{
+	height: 520px;
+	width: 353px;
+	margin-bottom: 1.6em;
+	transform: rotate(1deg);
+	z-index: 1;
+}
+
+/*Decoracion amarilla*/
+.decorativeKazumi{
+	height: 650px;
+	width: 453px;
+	position: absolute;
+	right: -8px;
+	bottom: -30px;
+	transform: rotate(3.4deg);
+	z-index: -2;
+}
+
+/*Decoracion rojo*/
+.decorativeKazumi2{
+	height: 650px;
+	width: 453px;
+	position: absolute;
+	right: -5px;
+	bottom: -30px;
+	transform: rotate(-10.4deg);
+	z-index: -1;
+}
+
+/*Cuadro de texto Kazumi*/
+.fieldtext{
+	height: 200px;
+	width: 90%;
+	position: absolute;
+	right: -5px;
+	bottom: 30px;
+	transform: rotate(-4.4deg);
+	z-index: -2;
+	color: white;
+
+}
+
+/*Sombra texto kazumi*/
+.fieldtextDecoration{
+	height: 200px;
+	width: 90%;
+	position: absolute;
+	
+		
+	z-index: -4;
+}
+
+.s1{
+	transform: rotate(-6.4deg);
+	bottom: 34.7px;
+	right: 4.7em;
+}
+
+.s2{
+	transform: rotate(-5.4deg);
+	bottom: 20px;
+	right: 1.7em;
+}
+
+
+/*Texto de Kazumi*/
+.kazumiText{
+	margin: 3.5em 29em 6em 4em;
+	font-family: 'Press Start 2P', cursive;
+}
+
+/*---------------------------------------------------------------------*/
+
+.block{
+	width: 100%;
+	height: 100%
+}
+
+
+
+/*---------------------------------------------------------------------*/
+
+.invisible-bar{
+	width: 430px;
+	height: 90px;
+	/*background: blue;*/
+	position: absolute;
+	right: -25px;
+	bottom: -10px;
+	z-index: 1;
+	transform: rotate(-3.4deg);
+	transition:0.5s;
+}
+
+.invisible-barx{
+	width: 430px;
+	height: 90px;
+	/*background: blue;*/
+	position: absolute;
+	right: -25px;
+	bottom: -10px;
+	z-index: 0;
+	transform: rotate(-3.4deg);
+	transition:0.5s;
+}
+
+.invisibleDesplazada{
+	width: 430px;
+	height: 600px;
+	background: black;
+	position: absolute;
+	right: -25px;
+	bottom: -10px;
+	z-index: -1;
+	transform: rotate(-3.4deg);
+	transition: 0.35s;
+
+
+}
+
+.section{
+	font-family: 'Press Start 2P', cursive;
+	width: 20em; 
+	height: 4em;
+	background: white;
+	margin-top: 7%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.35;
+}
+
+.top{
+	margin-left: 100%;
+	margin-top: 100px;
+	transform: rotate(-1.4deg);
+}
+
+.middle{
+	margin-left: 100%;
+	transform: rotate(2.4deg);
+}
+
+.mid {
+	margin-left: 100%;
+	transform: rotate(0.4deg);
+}
+
+.bottom{
+	margin-left: 100%;
+	transform: rotate(2.4deg);
+}
+
+.bot{
+	margin-left: 100%;
+	transform: rotate(-1.4deg);
+}
+
+/*------OcultoMostrado------*/
+.topM{
+	margin-left: 50px;
+	margin-top: 100px;
+	transform: rotate(-1.4deg);
+	transition: 0.6s;	
+}
+
+.middleM{
+	margin-left: 10px;
+	transform: rotate(2.4deg);
+	transition: 0.5s;
+}
+
+.midM {
+	margin-left: 32px;
+	transform: rotate(0.4deg);
+	transition: 0.4s;
+}
+
+.bottomM{
+	margin-left:3px;
+	transform: rotate(2.4deg);
+	transition: 0.3s;
+}
+
+.botM{
+	margin-left: 17px;
+	transform: rotate(-1.4deg);
+	transition: 0.2s;
+}
+
+
+
+
+.ocultar{
+	background-color: red;
+	margin-left: 100%;
+}
